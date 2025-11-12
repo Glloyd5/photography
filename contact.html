@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-theme="abyss">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js" defer></script>
+    <title>Griffin Lloyd Photography</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="-1"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <a href="index.html" class="btn btn-ghost text-xl">Gamut of Griffin</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contact bg-base-200 min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-5xl font-bold">Send me a message!</h1>
+                    <p class="py-6">
+                        If you would like to use one of my images or talk photography send me a message.
+                    </p>
+                    <p>
+                        Thanks for checking out my site!
+                    </p>
+                </div>
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset flex flex-col gap-4">
+                            <label class="label">Name</label>
+                            <input type="name" class="input" placeholder="Name" />
+                            <label class="label">Email</label>
+                            <input type="email" class="input" placeholder="Email" />
+                            <label class="label">Message</label>
+                            <textarea class="rounded-md border border-slate-700" name="msg" id="msg" rows="5" placeholder="Something nice hopefully."></textarea>
+                            <button class="btn btn-primary mt-4">Send</button>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

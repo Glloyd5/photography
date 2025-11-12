@@ -2,3 +2,26 @@
 @plugin "daisyui" {
   themes: night --default;
 };
+
+.hero {
+  @apply text-white py-5;
+  background-image: url(../src/img/rainForest.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact {
+  @apply text-white py-5;
+  background-image: url(../src/img/flyFishing.webp);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .hero {
+    background-image: url(../src/img/castleMountain.webp);
+  }
+}
